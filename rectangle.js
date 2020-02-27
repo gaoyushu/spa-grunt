@@ -1,3 +1,4 @@
+/* global $: true*/
 $(function(){
     // 先思考整个流程 再将步骤模块化
 
@@ -12,7 +13,7 @@ $(function(){
     $btn.click(function(){ // 有误差 需要优化*
         // get value
         let w = Number($width.val()),
-            h = Number($height.val());
+            h = Number($height.val()),
             p = 0,
             a = 0;
 
@@ -33,7 +34,7 @@ $(function(){
         // output
         $perimeter.val(p);
         $area.val(a);
-    })
+    });
 
     // 传输代码时压缩代码 减少带宽 提高速度（自动化构建优化的案例）
-})
+});
